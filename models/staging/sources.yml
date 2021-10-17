@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: stage_shopify_data
+    columns:
+      - name: shop
+        tests:
+          - not_null
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: transcation_id
+        tests:
+          - unique
+          - not_null
+      - name: currency
+        tests:
+          - accepted_values:
+              values:
+                [
+                  'EUR',
+                  'GBP'
+                ] 
+  - name: stage_google_analytics_transcations 
+    columns:
+      - name: shop
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stage_shopify_date')
+              field: shop
+      - name: transcation_id
+        tests:
+          - unique
+          - not_null
+     
+  - name: stage_google_analytics_webusuage
+    columns:
+      - name: shop
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stage_shopify_date')
+              field: shop
+
+  - name: stage_marketing_costs
+    columns:
+      - name: shop
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stage_shopify_date')
+              field: shop
+  

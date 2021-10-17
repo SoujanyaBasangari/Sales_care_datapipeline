@@ -1,0 +1,16 @@
+version: 2
+
+models: 
+    - name: sales_datamart 
+      columns: 
+          - name: transcation_id
+            tests:
+              - unique 
+              - not_null
+          - name: order_id
+            tests:
+               - unique
+               - not_null
+          - name: customer_id
+            tests:
+               - not_null 
