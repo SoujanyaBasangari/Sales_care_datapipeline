@@ -44,19 +44,19 @@ Perform extract and load using stitch
 EL for s3 to datawarehouse (postgres)
 
 1. Source S3 path and the file delimiter.Add details of replication frequency and scheduler details.
-2. data warehouse connection details (endpoint, port, username, password and database name)
+2. data warehouse connection details (endpoint, port, username, password and database name).
 3. the destination data warehouse schema name as salesdata and tables are marketing_costs,google_analytics_webusuage,google_analytics_transcations and shopify_data.
-4. set the run frequency
+4. set the run frequency.
 
 ## Tranformation_setup
 
-1.set up a dbt projects sales_care_datapipeline
-2.set up database connection to postgres database.
-3.set up a repository using github or gitlab and initialize the project repo
+1. set up a dbt projects sales_care_datapipeline
+2. set up database connection to postgres database.
+3. set up a repository using github or gitlab and initialize the project repo.
 4. create the model. as part of this task i created four staging models which can be found models folder. and sources.yml has configuration and quality check details.
 5. sources.yml file specifies the testing.If any of the test cases fail it will stop the pipeline.
-6. Final model is created in data mart folder.Added some quality checks in schema.yml
-7. commit and save file
+6. Final model is created in data mart folder.Added some quality checks in schema.yml.
+7. commit and save file.
 
 ## Schedule_and_monitor
 
