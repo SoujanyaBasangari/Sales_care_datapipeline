@@ -67,7 +67,7 @@ EL for s3 to datawarehouse (postgres)
 
 ## Utilized_resources
 
-https://blog.rittmananalytics.com/how-rittman-analytics-does-analytics-modern-bi-stack-operational-analytics-using-looker-stitch-c5ea3df31d23
-https://www.startdataengineering.com/post/build-a-simple-data-engineering-platform/
-https://pythonrepo.com/repo/renatootescu-ETL-pipeline-python-science-and-data-analysis
+1. https://blog.rittmananalytics.com/how-rittman-analytics-does-analytics-modern-bi-stack-operational-analytics-using-looker-stitch-c5ea3df31d23
+2. https://www.startdataengineering.com/post/build-a-simple-data-engineering-platform/
+3. https://pythonrepo.com/repo/renatootescu-ETL-pipeline-python-science-and-data-analysis
 
