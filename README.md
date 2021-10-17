@@ -56,7 +56,7 @@ EL for s3 to datawarehouse (postgres)
 4. create the model. as part of this task i created four staging models which can be found models folder. and sources.yml has configuration and quality check details.
 5. sources.yml file specifies the testing.If any of the test cases fail it will stop the pipeline.
 6. Final model is created in data mart folder.Added some quality checks in schema.yml.
-7. Audit set up - start event and end event  the following in your dbt_project.yml directly.These will stream the events for all dbt invocations in your warehouse.
+7. Audit set up - start event and end event are included in dbt_project.yml directly.These will stream the events for all dbt invocations in your warehouse.
 8. commit and save file.
 
 ## Schedule_and_monitor
